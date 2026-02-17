@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khmer Font Test - Khmer OS Dangrek</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="public/css/khmer-fonts.css">
+    
+    <!-- Khmer Font Support -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Khmer+OS+Dangrek&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-100 p-8">
+    <div class="max-w-4xl mx-auto bg-white p-8 border-4 border-gray-800 shadow-lg">
+        <h1 class="text-3xl font-bold text-gray-900 mb-6">Khmer OS Dangrek Font Test</h1>
+        
+        <!-- Test different font classes -->
+        <div class="space-y-6">
+            <div class="border-2 border-gray-300 p-4">
+                <h2 class="text-xl font-bold text-gray-800 mb-3">Regular Khmer Text (.khmer-text)</h2>
+                <p class="khmer-text text-lg">ប្រព័ន្ធលក់ដូរ - POS System</p>
+                <p class="khmer-text text-lg">ការលក់បច្ចុប្បន្ន - Current Sale</p>
+                <p class="khmer-text text-lg">មិនមានទំនិញក្នុងកន្ត្រក - No items in cart</p>
+                <p class="khmer-text text-lg">បញ្ចប់ការទូទាត់ - Complete Payment</p>
+                <p class="khmer-text text-lg">ព័ត៌មានអតិថិជន (ស្រេចចិត្ត) - Customer Information (Optional)</p>
+            </div>
+            
+            <div class="border-2 border-gray-300 p-4">
+                <h2 class="text-xl font-bold text-gray-800 mb-3">Title Khmer Text (.khmer-title)</h2>
+                <h3 class="khmer-title text-2xl">ប្រព័ន្ធលក់ដូរ</h3>
+                <h3 class="khmer-title text-2xl">ការលក់បច្ចុប្បន្ន</h3>
+            </div>
+            
+            <div class="border-2 border-gray-300 p-4">
+                <h2 class="text-xl font-bold text-gray-800 mb-3">Small Khmer Text (.khmer-small)</h2>
+                <p class="khmer-small">ការលក់ថ្ងៃនេះ - Today's Sales</p>
+                <p class="khmer-small">ការលក់សរុប - Total Sales</p>
+                <p class="khmer-small">ទំនិញសរុប - Total Products</p>
+                <p class="khmer-small">អតិថិជនសរុប - Total Customers</p>
+            </div>
+            
+            <div class="border-2 border-gray-300 p-4">
+                <h2 class="text-xl font-bold text-gray-800 mb-3">Large Khmer Text (.khmer-large)</h2>
+                <p class="khmer-large">ប្រព័ន្ធលក់ដូរ</p>
+                <p class="khmer-large">ការលក់បច្ចុប្បន្ន</p>
+            </div>
+            
+            <div class="border-2 border-gray-300 p-4">
+                <h2 class="text-xl font-bold text-gray-800 mb-3">Mixed Text (.mixed-text)</h2>
+                <p class="mixed-text text-lg">Smart search... / ស្វែងរកឆាប់...</p>
+                <p class="mixed-text text-lg">Manage Customers / គ្រប់គ្រងអតិថិជន</p>
+                <p class="mixed-text text-lg">No products found / រកមិនឃើញទំនិញ</p>
+            </div>
+            
+            <div class="border-2 border-gray-300 p-4">
+                <h2 class="text-xl font-bold text-gray-800 mb-3">Input Field Test (.khmer-input)</h2>
+                <input type="text" placeholder="Smart search... / ស្វែងរកឆាប់..." 
+                       class="w-full px-3 py-2 border-2 border-gray-300 khmer-input mixed-text">
+            </div>
+            
+            <div class="border-2 border-gray-300 p-4">
+                <h2 class="text-xl font-bold text-gray-800 mb-3">Button Test (.khmer-button)</h2>
+                <button class="khmer-button bg-blue-600 text-white px-4 py-2 border-2 border-blue-800">
+                    បញ្ចប់ការទូទាត់ - Complete Payment
+                </button>
+            </div>
+        </div>
+        
+        <div class="mt-8 p-4 bg-green-50 border-2 border-green-300">
+            <h2 class="text-lg font-bold text-green-800 mb-2">✅ Font Implementation Status</h2>
+            <ul class="text-green-700 space-y-1">
+                <li>✅ Khmer OS Dangrek font loaded from Google Fonts</li>
+                <li>✅ CSS classes defined for different text sizes</li>
+                <li>✅ Mixed language support (English + Khmer)</li>
+                <li>✅ Input field placeholder support</li>
+                <li>✅ Button text support</li>
+                <li>✅ Proper text rendering optimization</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

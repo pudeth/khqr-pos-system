@@ -1,0 +1,99 @@
+========================================
+🛍️ CUSTOMER SHOPPING FLOW - READY!
+========================================
+
+✅ COMPLETE SETUP FOR CUSTOMERS
+
+1. CUSTOMER VISITS
+   → http://localhost:8000
+   → Sees welcome page
+
+2. CLICKS "START NOW"
+   → Goes to login page
+   → Sees "Continue with Google" button
+
+3. GOOGLE LOGIN
+   → Clicks Google button
+   → Signs in with Google
+   → Account auto-created (role: customer)
+
+4. LANDS ON POS
+   → http://localhost:8000/pos
+   → Sees products with images
+   → Can search & filter
+   → Sees their name + avatar
+   → Has logout button
+
+5. SHOPS
+   → Browses products
+   → Adds to cart
+   → Adjusts quantities
+   → Sees live total
+
+6. CHECKOUT
+   → Clicks "Complete Sale"
+   → KHQR QR code generated
+   → Scans with banking app
+   → Makes payment
+
+7. PAYMENT VERIFIED
+   → Auto-verification
+   → Receipt shown
+   → Telegram alert sent
+   → Inventory updated
+
+========================================
+✨ CUSTOMER FEATURES
+========================================
+
+✅ Google login (no password needed)
+✅ Profile picture from Google
+✅ Browse all products
+✅ Search products
+✅ Filter by category
+✅ See product images
+✅ Add to cart
+✅ Adjust quantities
+✅ See discounts
+✅ KHQR payment
+✅ Auto-verification
+✅ Receipt generation
+✅ Easy logout
+
+========================================
+🎯 WHAT'S DIFFERENT FOR CUSTOMERS
+========================================
+
+CUSTOMERS SEE:
+✅ POS interface
+✅ Products & cart
+✅ Logout button
+✅ Their name & avatar
+
+CUSTOMERS DON'T SEE:
+❌ Admin dashboard link
+❌ Product management
+❌ Sales reports
+❌ Settings
+
+========================================
+🧪 TEST IT NOW
+========================================
+
+1. Open: http://localhost:8000
+2. Click "START NOW"
+3. Click "Continue with Google"
+4. Sign in
+5. ✅ You're shopping!
+
+========================================
+📝 REMEMBER
+========================================
+
+- Server is running on port 8000
+- Update Google Console redirect URI
+- Customers auto-created as "customer" role
+- Admins still use email/password
+- POS works for both customers & admins
+
+========================================

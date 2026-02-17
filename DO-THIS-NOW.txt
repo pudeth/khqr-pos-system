@@ -1,0 +1,48 @@
+========================================
+✅ DONE! Server is Running
+========================================
+
+Your server is now running at:
+http://localhost:8000
+
+========================================
+⚠️ ONE MORE STEP REQUIRED
+========================================
+
+Go to Google Cloud Console and add this redirect URI:
+
+1. Open: https://console.cloud.google.com/apis/credentials
+
+2. Click your OAuth Client ID
+
+3. Add this URI:
+   http://localhost:8000/auth/google/callback
+
+4. Click SAVE
+
+========================================
+🧪 THEN TEST IT
+========================================
+
+1. Open: http://localhost:8000/login
+
+2. Click "Continue with Google"
+
+3. Sign in with Google
+
+4. ✅ You're logged in!
+
+========================================
+📝 IMPORTANT
+========================================
+
+Keep the server running!
+Don't close the terminal window.
+
+If you need to stop the server:
+Press Ctrl+C in the terminal
+
+To start again:
+Run: php artisan serve
+
+========================================

@@ -1,0 +1,35 @@
+╔═══════════════════════════════════════════════════════════╗
+║                                                           ║
+║   FIX GOOGLE OAUTH SSL ERROR                              ║
+║                                                           ║
+║   Error: cURL error 60: SSL certificate problem          ║
+║                                                           ║
+╚═══════════════════════════════════════════════════════════╝
+
+🔧 QUICK FIX - Run this command:
+
+    fix-ssl-certificate.bat
+
+⚡ What it does:
+   ✓ Downloads CA certificate bundle (cacert.pem)
+   ✓ Configures app automatically (no php.ini editing!)
+   ✓ Starts Laravel server for testing
+
+📝 After running:
+   1. Browser opens to: http://localhost:8000/login
+   2. Click "Sign in with Google"
+   3. SSL error is GONE! ✅
+
+💡 How it works:
+   - AppServiceProvider.php now configures SSL automatically
+   - Uses cacert.pem for certificate verification
+   - Works for all HTTPS requests
+
+📚 Documentation:
+   - Quick Guide: FIX-GOOGLE-SSL-NOW.md
+   - Detailed: SSL-CERTIFICATE-FIX.md
+   - Summary: GOOGLE-OAUTH-SSL-FIXED.md
+
+🚀 Ready? Run the command above!
+
+═══════════════════════════════════════════════════════════

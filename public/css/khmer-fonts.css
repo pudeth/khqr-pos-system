@@ -1,0 +1,144 @@
+/* Khmer OS Dangrek Font Support */
+@import url('https://fonts.googleapis.com/css2?family=Khmer+OS+Dangrek&display=swap');
+
+/* Base Khmer Font Classes */
+.khmer-text {
+    font-family: 'Khmer OS Dangrek', serif;
+    font-weight: normal;
+    line-height: 1.6;
+    text-rendering: optimizeLegibility;
+    -webkit-font-feature-settings: "liga" 1, "calt" 1;
+    font-feature-settings: "liga" 1, "calt" 1;
+}
+
+.khmer-title {
+    font-family: 'Khmer OS Dangrek', serif;
+    font-weight: bold;
+    line-height: 1.4;
+    text-rendering: optimizeLegibility;
+}
+
+.khmer-small {
+    font-family: 'Khmer OS Dangrek', serif;
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+.khmer-large {
+    font-family: 'Khmer OS Dangrek', serif;
+    font-size: 1.25rem;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+.khmer-xl {
+    font-family: 'Khmer OS Dangrek', serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+/* Mixed Language Support */
+.mixed-text {
+    font-family: 'Khmer OS Dangrek', serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    text-rendering: optimizeLegibility;
+}
+
+/* Specific UI Element Classes */
+.khmer-button {
+    font-family: 'Khmer OS Dangrek', serif;
+    font-weight: bold;
+    letter-spacing: 0.025em;
+}
+
+.khmer-input::placeholder {
+    font-family: 'Khmer OS Dangrek', serif;
+    opacity: 0.7;
+}
+
+.khmer-label {
+    font-family: 'Khmer OS Dangrek', serif;
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+
+/* Color Variants for Khmer Text */
+.khmer-text-primary {
+    color: #1f2937;
+}
+
+.khmer-text-secondary {
+    color: #6b7280;
+}
+
+.khmer-text-accent {
+    color: #dc2626;
+}
+
+.khmer-text-success {
+    color: #059669;
+}
+
+.khmer-text-warning {
+    color: #d97706;
+}
+
+/* Responsive Font Sizes */
+@media (max-width: 640px) {
+    .khmer-large {
+        font-size: 1.125rem;
+    }
+    
+    .khmer-xl {
+        font-size: 1.25rem;
+    }
+}
+
+/* Print Styles for Khmer Text */
+@media print {
+    .khmer-text, .khmer-title, .khmer-small, .khmer-large, .khmer-xl {
+        font-family: 'Khmer OS Dangrek', serif !important;
+        color: black !important;
+    }
+}
+
+/* Ensure proper spacing for Khmer characters */
+.khmer-text p,
+.khmer-title p {
+    margin-bottom: 0.5rem;
+}
+
+/* Special styling for form elements with Khmer text */
+input.khmer-input,
+textarea.khmer-input,
+select.khmer-input {
+    font-family: 'Khmer OS Dangrek', serif;
+}
+
+/* Table headers with Khmer text */
+.khmer-table-header {
+    font-family: 'Khmer OS Dangrek', serif;
+    font-weight: bold;
+    font-size: 0.875rem;
+}
+
+/* Navigation items with Khmer text */
+.khmer-nav {
+    font-family: 'Khmer OS Dangrek', serif;
+    font-weight: 500;
+}
+
+/* Card titles with Khmer text */
+.khmer-card-title {
+    font-family: 'Khmer OS Dangrek', serif;
+    font-weight: bold;
+    font-size: 1.125rem;
+    line-height: 1.3;
+}
+
+/* Badge/Tag styling for Khmer text */
+.khmer-badge {
+    font-family: 'Khmer OS Dangrek', serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
