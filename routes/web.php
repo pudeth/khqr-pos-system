@@ -13,6 +13,25 @@ Route::get('/', function () {
     return view('welcome');
 })->name('home');
 
+// Health check route for Railway
+Route::get('/health', function () {
+    try {
+        \DB::connection()->getPdo();
+        return response()->json([
+            'status' => 'ok',
+            'database' => 'connected',
+            'app' => config('app.name')
+        ]);
+    } catch (\Exception $e) {
+        return response()->json([
+            'status' => 'error',
+            'database' => 'disconnected',
+            'message' => 'Database not configured yet',
+            'app' => config('app.name')
+        ], 500);
+    }
+});
+
 Route::get('/payment', function () {
     return view('payment');
 });
