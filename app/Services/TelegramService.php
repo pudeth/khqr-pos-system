@@ -7,8 +7,8 @@ use Illuminate\Support\Facades\Log;
 
 class TelegramService
 {
-    protected string $botToken;
-    protected string $chatId;
+    protected ?string $botToken;
+    protected ?string $chatId;
     protected string $apiUrl = 'https://api.telegram.org/bot';
 
     public function __construct()
@@ -18,10 +18,23 @@ class TelegramService
     }
 
     /**
+     * Check if Telegram is configured
+     */
+    protected function isConfigured(): bool
+    {
+        return !empty($this->botToken) && !empty($this->chatId);
+    }
+
+    /**
      * Send message to Telegram
      */
     public function sendMessage(string $message, ?string $chatId = null): bool
     {
+        if (!$this->isConfigured()) {
+            Log::warning('Telegram not configured, skipping message send');
+            return false;
+        }
+
         $targetChatId = $chatId ?? $this->chatId;
 
         try {
@@ -218,6 +231,13 @@ class TelegramService
      */
     public function testConnection(): array
     {
+        if (!$this->isConfigured()) {
+            return [
+                'success' => false,
+                'message' => 'Telegram bot token or chat ID not configured'
+            ];
+        }
+
         try {
             $response = Http::withOptions([
                 'verify' => false,
